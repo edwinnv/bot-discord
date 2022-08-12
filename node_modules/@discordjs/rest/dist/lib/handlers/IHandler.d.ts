@@ -1,0 +1,9 @@
+import type { Dispatcher } from 'undici';
+import type { RequestOptions } from '../REST';
+import type { HandlerRequestData, RouteData } from '../RequestManager';
+export interface IHandler {
+    queueRequest: (routeId: RouteData, url: string, options: RequestOptions, requestData: HandlerRequestData) => Promise<Dispatcher.ResponseData>;
+    get inactive(): boolean;
+    readonly id: string;
+}
+//# sourceMappingURL=IHandler.d.ts.map

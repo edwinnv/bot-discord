@@ -1,0 +1,12 @@
+export interface JSONEncodable<T> {
+    /**
+     * Transforms this object to its JSON format
+     */
+    toJSON: () => T;
+}
+/**
+ * Indicates if an object is encodable or not.
+ * @param maybeEncodable - The object to check against
+ */
+export declare function isJSONEncodable(maybeEncodable: unknown): maybeEncodable is JSONEncodable<unknown>;
+//# sourceMappingURL=jsonEncodable.d.ts.map
