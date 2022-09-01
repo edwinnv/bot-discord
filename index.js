@@ -6,4 +6,5 @@ client.commands = new Collection()
 
 require('./Handlers/Events')(client)
 require('./Handlers/Commands')(client)
+///aaa
 client.login(Token)
