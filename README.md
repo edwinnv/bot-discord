@@ -1,1 +1,1 @@
-# bot-music-discord
+# bot-discord
