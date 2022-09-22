@@ -12,7 +12,7 @@ module.exports = {
     console.log('The client is now ready malparido!')
     client.user.setActivity('HOLA CACHON!', { type: 'WATCHING' })
 
-    if (!Database) return
+    if (!Database) return;
     mongoose
       .connect(Database, {
         useNewUrlParser: true,
@@ -23,6 +23,6 @@ module.exports = {
       })
       .catch((err) => {
         console.log(err)
-      })
-  },
+      });
+  }
 }
